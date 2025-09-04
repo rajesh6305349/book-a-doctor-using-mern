@@ -79,7 +79,7 @@ export default function AdminDoctors() {
               <input value={editing.email} onChange={(e) => setEditing((s) => ({ ...s, email: e.target.value }))} />
               <select value={editing.status} onChange={(e) => setEditing((s) => ({ ...s, status: e.target.value }))}>
                 <option value="active">Active</option>
-                <option value="pending_approval">Pending Approval</option>
+                <option value="pending_approval">Approval is pending</option>
                 <option value="rejected">Rejected</option>
               </select>
               <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8 }}>
